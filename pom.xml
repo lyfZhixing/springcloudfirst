@@ -23,6 +23,7 @@
         <module>eureka-server</module>
         <module>service-hi</module>
         <module>service-ribbon</module>
+        <module>serice-feign</module>
     </modules>
 
     <properties>
