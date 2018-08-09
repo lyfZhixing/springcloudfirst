@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.lang.model.element.NestingKind;
-
 /**
  * @Author: liyufeng
  * @Description: Eureka client
@@ -29,7 +27,7 @@ public class ServiceHiApplication {
     String port;
 
     @GetMapping("/hi")
-    public String home(@RequestParam(value = "name" , defaultValue = "lyf") String name) {
+    public String home(@RequestParam(value = "name" , defaultValue = "lyf/ribbon") String name) {
         return "hi" + name + " ,i am from port:" + port;
     }
 }
